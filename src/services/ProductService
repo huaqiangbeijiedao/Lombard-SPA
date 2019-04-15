@@ -11,6 +11,10 @@ export class ProductService{
 
     public updateProduct(product : Product)
     {
+        return this.api.post("/UpdateProduct", product);
+    }
+
+    public searchById(id : number) : Observable<Product>{
         
     }
 }
