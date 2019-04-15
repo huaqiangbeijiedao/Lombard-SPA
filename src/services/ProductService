@@ -1,0 +1,16 @@
+import {ServiceBase} from "./ServiceBase"
+import { Observable } from "rxjs";
+
+export class ProductService{
+    constructor(private api: ServiceBase){}
+
+    public getAll() : Observable<Product[]>
+    {
+        return this.api.get("/GetProducts");
+    }
+
+    public updateProduct(product : Product)
+    {
+        
+    }
+}
