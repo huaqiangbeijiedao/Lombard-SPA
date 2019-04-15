@@ -8,15 +8,18 @@ import { FormsModule } from '@angular/forms';
 
 import { NavComponent } from './nav/nav.component';
 
-import { AddProductFormComponent } from './addProductForm/addProductForm.component';
+
+
+import { ProductTableComponent } from './productTable/productTable.component';
+import { UpdateProductComponent } from './updateProduct/updateProduct.component';
 
 
 @NgModule({
    declarations: [
       AppComponent,
       NavComponent,
-      AddProductFormComponent,
-      NavComponent
+      ProductTableComponent,
+      UpdateProductComponent
    ],
    imports: [
       BrowserModule,
