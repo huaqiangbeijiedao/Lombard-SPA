@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from "./app.component";
 import { UpdateProductComponent } from "./updateProduct/updateProduct.component";
 import { ProductTableComponent } from "./productTable/productTable.component";
+import { AddTransactionComponent } from './AddTransaction/AddTransaction.component';
+import { TransactionTableComponent } from './TransactionTable/TransactionTable.component';
 
 const routes: Routes = [
   {path: "update", component:UpdateProductComponent },
-  { path: "list", component: ProductTableComponent}
+  { path: "list", component: ProductTableComponent},
+  { path: "addtransation", component: AddTransactionComponent},
+  { path: "showtransations", component: TransactionTableComponent},
 ];
 
 @NgModule({

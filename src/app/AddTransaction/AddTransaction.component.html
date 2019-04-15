@@ -1,4 +1,4 @@
-<form [formGroup]="form">
+<!-- <form [formGroup]="form">
   <div class="row">
     <div class="col-sm-8">
       <mat-form-field>
@@ -58,8 +58,8 @@
     <div class="row crew-header">
       <div class="col">
         <span>Product - {{ index + 1}}</span>
-        <!-- <mat-icon class="float-right" (click)="removeProduct(index)">delete_forever</mat-icon> -->
-      </div>
+        <mat-icon class="float-right" (click)="removeProduct(index)">delete_forever</mat-icon> -->
+      <!-- </div>
     </div>
     <div class="row" [formGroupName]="index">
       <div class="col-sm-5">
@@ -70,14 +70,14 @@
       <div class="col-sm-4">
         <mat-form-field>
           <mat-select formControlName="Price" placeholder="0.00">
-            <!-- <mat-option *ngFor="let product of products" [value]="product.value">{{ product.Name }}</mat-option> -->
-          </mat-select>
+            <mat-option *ngFor="let product of products" [value]="product.value">{{ product.Name }}</mat-option> -->
+          <!-- </mat-select>
         </mat-form-field>
       </div>
       <div class="col-sm-4">
         <mat-form-field>
           <mat-select formControlName="Quantity" placeholder="0">
-            <!-- <mat-option *ngFor="let product of products" [value]="product.value">{{ product.Name }}</mat-option> -->
+            <mat-option *ngFor="let product of products" [value]="product.value">{{ product.Name }}</mat-option>
           </mat-select>
         </mat-form-field>
       </div>
@@ -86,4 +86,4 @@
   <div class="col">
     <button mat-raised-button color="primary" (click)="addCrewMember()">Add product</button>
   </div>
-</form>
+</form> -->
