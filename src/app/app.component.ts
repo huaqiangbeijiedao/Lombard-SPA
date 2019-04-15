@@ -11,11 +11,11 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'Lombard-SPA';
-  Products : Observable<Product[]>
+  Products : Product[]
   constructor(private api : ProductService){}
 
   ngOnInit(){
-    this.Products = this.api.getAll();
+    this.api.getAll().subscribe(x => this.Products = x);
     console.log(this.Products);
   }
 }
