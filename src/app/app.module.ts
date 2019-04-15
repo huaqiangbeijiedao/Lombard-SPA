@@ -9,8 +9,7 @@ import { NavComponent } from './nav/nav.component';
 
 import { AddProductFormComponent } from './addProductForm/addProductForm.component';
 import { AddTransactionComponent } from './AddTransaction/AddTransaction.component';
-import { AddTransactionComponent } from './AddTransaction/AddTransaction.component';
-import { AddTransactionComponent } from '.c:/Users/Krykjjk/Desktop/Lombard-View/Lombard-SPA/src/AddTransaction/AddTransaction.component';
+
 
 
 @NgModule({
