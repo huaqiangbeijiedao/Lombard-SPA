@@ -9,13 +9,14 @@ import { Observable } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'Lombard-SPA';
-  Products : Product[]
-  constructor(private api : ProductService){}
+// export class AppComponent implements OnInit {
+//   title = 'Lombard-SPA';
+//   Products : Product[]
+//   constructor(private api : ProductService){}
 
-  ngOnInit(){
-    this.api.getAll().subscribe(x => this.Products = x);
-    console.log(this.Products);
-  }
-}
+//   ngOnInit(){
+//     this.api.getAll().subscribe(x => this.Products = x);
+//     console.log(this.Products);
+//   }
+// }
+export class AppComponent{}

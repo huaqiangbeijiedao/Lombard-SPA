@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
 import { NavComponent } from './nav/nav.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { ProductTableComponent } from './productTable/productTable.component';
@@ -24,7 +24,8 @@ import { UpdateProductComponent } from './updateProduct/updateProduct.component'
    imports: [
       BrowserModule,
       AppRoutingModule,
-      NgbModule
+      NgbModule,
+      HttpClientModule
    ],
    providers: [],
    bootstrap: [

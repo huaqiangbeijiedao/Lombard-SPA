@@ -17,7 +17,7 @@ export class ProductService{
 
     public updateProduct(product : Product)
     {
-        return this.api.post("/UpdateProduct", product);
+        return this.api.post("Product/UpdateProduct", product);
     }
 
     public searchById(id : number) : Observable<Product>{
