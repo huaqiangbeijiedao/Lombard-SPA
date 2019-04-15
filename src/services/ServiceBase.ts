@@ -1,8 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Observable, config } from 'rxjs';
-
+import { Injectable } from "@angular/core";
+@Injectable({
+    providedIn: 'root',
+})
 export class ServiceBase{
-    readonly BASE_URL : string = "http://localhost:5000/api"
+    readonly BASE_URL : string = "http://localhost:54937/api/"
 
     config = {
         headers:{
