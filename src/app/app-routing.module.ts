@@ -8,7 +8,6 @@ const routes: Routes = [
   { path: "list", component: ProductTableComponent},
   { path: "showtransations", component: TransactionTableComponent},
   {path: "outage", component: OutageComponent}
-
 ];
 
 @NgModule({
