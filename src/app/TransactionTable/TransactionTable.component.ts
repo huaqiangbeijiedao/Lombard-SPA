@@ -16,7 +16,6 @@ export class TransactionTableComponent implements OnInit {
       .getAll()
       .subscribe(x => {
         this.transactions = x;
-        console.log(this.transactions);
       });
   }
 
