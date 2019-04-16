@@ -21,12 +21,12 @@ export class ProductService{
     }
 
     public searchById(id : number) : Observable<Product>{
-        return this.api.get("/SearchById/${id}")
+        return this.api.get(`/SearchById/${id}`)
     }
 
     public searchByName(name : string) : Observable<Product[]> 
     {
-        return this.api.get("/SearchByName/${name}");
+        return this.api.get(`/SearchByName/${name}`);
     }
 
     public removeProducts(products : Product[]){
