@@ -10,7 +10,6 @@ import { ProductTableComponent } from './productTable/productTable.component';
 import { UpdateProductComponent } from './updateProduct/updateProduct.component';
 import { ProductComponent } from './Model-Component/Product/Product.component';
 import { TransactionComponent } from './Model-Component/Transaction/Transaction.component';
-import { AddTransactionComponent } from './AddTransaction/AddTransaction.component';
 import { TransactionTableComponent } from './TransactionTable/TransactionTable.component';
 
 
@@ -22,7 +21,6 @@ import { TransactionTableComponent } from './TransactionTable/TransactionTable.c
       UpdateProductComponent,
       ProductComponent,
       TransactionComponent,
-      AddTransactionComponent,
       TransactionTableComponent
    ],
    imports: [
