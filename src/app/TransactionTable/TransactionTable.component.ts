@@ -13,8 +13,11 @@ export class TransactionTableComponent implements OnInit {
 
   ngOnInit() {
     this.transactionservice
-    .getAll()
-    .subscribe(x => this.transactions = x);
+      .getAll()
+      .subscribe(x => {
+        this.transactions = x;
+        console.log(this.transactions);
+      });
   }
 
 }
