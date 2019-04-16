@@ -1,17 +1,18 @@
-<div >
-  <div clas>
-    <div class = "row">
-      <div class="col">
-        <p >Date : {{ transaction.transactionDate }}</p>
-        <p >Type : {{ transaction.transactionType}}</p>
-        <div *ngFor="let product of transaction.productHistory" >
-          <p>{{product.id}}</p>
-          <p>{{product.name}}</p>
-       </div>
-       </div>
-        <p>---</p>
-      </div>
-    </div>
-
-
-</div>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{product.id}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.quantity}}</td>
+    </tr>
+  </tbody>
+</table>
