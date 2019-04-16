@@ -1,7 +1,7 @@
 <table class="table table-dark">
   <thead>
-    <tr>
-      <th scope="col">Id</th>
+    <tr class="text-dark" >
+      <th  scope="col">Id</th>
       <th scope="col">Name</th>
       <th scope="col">Price</th>
       <th scope="col">Quantity</th>
@@ -9,10 +9,10 @@
   </thead>
   <tbody>
     <tr *ngFor="let product of transaction.productHistory">
-      <td>{{product.id}}</td>
-      <td>{{product.name}}</td>
-      <td>{{product.price}}</td>
-      <td>{{product.quantity}}</td>
+      <td class="text-dark">{{product.id}}</td>
+      <td class="text-dark">{{product.name}}</td>
+      <td class="text-dark">{{product.price}}</td>
+      <td class="text-dark">{{product.quantity}}</td>
     </tr>
   </tbody>
 </table>
