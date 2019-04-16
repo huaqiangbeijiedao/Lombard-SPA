@@ -1,3 +1,17 @@
-<p>
-  {{transaction.TransactionDate}}
-</p>
+<div >
+  <div clas>
+    <div class = "row">
+      <div class="col">
+        <p >Date : {{ transaction.transactionDate }}</p>
+        <p >Type : {{ transaction.transactionType}}</p>
+        <div *ngFor="let product of transaction.productHistory" >
+          <p>{{product.id}}</p>
+          <p>{{product.name}}</p>
+       </div>
+       </div>
+        <p>---</p>
+      </div>
+    </div>
+
+
+</div>
