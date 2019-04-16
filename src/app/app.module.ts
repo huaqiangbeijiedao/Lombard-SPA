@@ -11,6 +11,7 @@ import { UpdateProductComponent } from './updateProduct/updateProduct.component'
 import { ProductComponent } from './Model-Component/Product/Product.component';
 import { TransactionComponent } from './Model-Component/Transaction/Transaction.component';
 import { TransactionTableComponent } from './TransactionTable/TransactionTable.component';
+import { OutageComponent } from './Outage/Outage.component';
 
 
 @NgModule({
@@ -21,13 +22,15 @@ import { TransactionTableComponent } from './TransactionTable/TransactionTable.c
       UpdateProductComponent,
       ProductComponent,
       TransactionComponent,
-      TransactionTableComponent
+      TransactionTableComponent,
+      OutageComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
       NgbModule,
-      HttpClientModule
+      HttpClientModule,
+      FormsModule
    ],
    providers: [],
    bootstrap: [
